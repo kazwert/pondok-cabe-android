@@ -1,4 +1,4 @@
-package com.ponca.pakin.pondokcabe.view;
+package com.ponca.pakin.pondokcabe.utils;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -30,7 +30,7 @@ public class QuoteAlarmManager {
         Calendar dailyTimeCalendar = Calendar.getInstance();
         dailyTimeCalendar.setTimeInMillis(System.currentTimeMillis());
         // set calendar to 7am
-        dailyTimeCalendar.set(Calendar.HOUR_OF_DAY, 13);
+        dailyTimeCalendar.set(Calendar.HOUR_OF_DAY, 7);
         //init alarm Manager
         mAlarmManager = (AlarmManager) mContext.getSystemService(mContext.ALARM_SERVICE);
         // setInexactRepeating will repeating alarm manager with approximate time (it will not exact same time as calendar)
