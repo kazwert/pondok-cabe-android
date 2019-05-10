@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">PondokCabe</string>
+    <string name="sample_quote">Di Empat Penjuru Samudera Kita Semua Saudara.</string>
+    <string name="sample_page">Tengah Sempurna Bab V ayat 1</string>
 </resources>
