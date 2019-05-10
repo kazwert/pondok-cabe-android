@@ -3,7 +3,7 @@ package com.ponca.pakin.pondokcabe.receiver;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import com.ponca.pakin.pondokcabe.view.QuoteAlarmManager;
+import com.ponca.pakin.pondokcabe.utils.QuoteAlarmManager;
 
 public class BootReceiver extends BroadcastReceiver {
 
