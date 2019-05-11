@@ -9,7 +9,7 @@ public class BootReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        if (intent.getAction().equals("android.intent.BOOT_COMPLETED")){
+        if (intent.getAction().equals("android.intent.action.BOOT_COMPLETED")){
             //Set Alarm Here
             QuoteAlarmManager quoteAlarmManager = new QuoteAlarmManager(context);
             quoteAlarmManager.initQuoteAlarmManager();
