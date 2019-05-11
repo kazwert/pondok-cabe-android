@@ -3,7 +3,19 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="lightGray">#ECECEC</color>
     <!--Quote Color-->
     <color name="quoteBackground">#FF8A65</color>
     <color name="dialogBackground">#DC000000</color>
+    <!--material800-->
+    <color name="purpleDark">#6A1B9A</color>
+    <color name="blueDark">#1565C0</color>
+    <color name="greenDark">#00695C</color>
+    <color name="orangeDark">#D84315</color>
+    <!--material400-->
+    <color name="purpleLight">#BA68C8</color>
+    <color name="blueLight">#64B5F6</color>
+    <color name="greenLight">#4DB6AC</color>
+    <color name="orangeLight">#FF8A65</color>
+
 </resources>

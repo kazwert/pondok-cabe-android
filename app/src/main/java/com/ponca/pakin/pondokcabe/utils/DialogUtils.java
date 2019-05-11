@@ -6,6 +6,7 @@ import android.support.annotation.NonNull;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import com.ponca.pakin.pondokcabe.R;
 
@@ -14,6 +15,7 @@ public class DialogUtils {
     public static void showQuoteDialog(@NonNull final Activity context,
             @NonNull String quote,
             @NonNull String page,
+            @NonNull int background,
             @NonNull final MyDialogActionListener closeListener) {
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
         View view = context.getLayoutInflater().inflate(R.layout.alert_quotes, null);
@@ -21,9 +23,11 @@ public class DialogUtils {
         TextView tvQuote = view.findViewById(R.id.tv_quote);
         TextView tvPage = view.findViewById(R.id.tv_page);
         ImageView btnClose = view.findViewById(R.id.img_close);
+        RelativeLayout container = view.findViewById(R.id.container_quote);
         builder.setView(view);
         builder.setCancelable(false);
         final AlertDialog dialog = builder.create();
+        container.setBackgroundResource(background);
         tvPage.setText(quote);
         tvQuote.setText(page);
         btnClose.setOnClickListener(new View.OnClickListener() {

@@ -1,43 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_quote"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@color/quoteBackground">
 
     <ImageView
         android:id="@+id/img_close"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_alignParentRight="true"
-        android:layout_margin="8dp"
-        android:background="?attr/selectableItemBackgroundBorderless"
+        style="@style/close_button"
         android:src="@drawable/ic_close_white_24dp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_margin="48dp"
-        android:orientation="vertical">
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_quote"
+        style="@style/text_view_quote"
+        android:maxHeight="380dp"
+        app:autoSizeMaxTextSize="32sp"
+        app:autoSizeMinTextSize="14sp"
+        app:autoSizeStepGranularity="1sp"
+        app:autoSizeTextType="uniform"
+        android:layout_marginTop="64dp"
+        tools:text="@string/sample_quote" />
 
-        <TextView
-            android:id="@+id/tv_quote"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="serif"
-            android:text="@string/sample_quote"
-            android:textColor="@android:color/black"
-            android:textSize="32sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/tv_page"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:gravity="right"
-            android:text="@string/sample_page"
-            android:textSize="20sp"
-            android:textStyle="italic" />
-    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_page"
+        style="@style/text_view_page"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="64dp"
+        tools:text="@string/sample_page" />
 </RelativeLayout>

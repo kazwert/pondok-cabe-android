@@ -40,7 +40,6 @@ public class QuoteAlarmManager {
                 dailyTimeCalendar.getTimeInMillis(),
                 AlarmManager.INTERVAL_DAY,
                 mPendingIntent);
-
     }
 
     public void cancelQuoteAlarmManager() {
